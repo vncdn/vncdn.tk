@@ -3,7 +3,7 @@
         extension_loaded: <input type="text" name="ext"><hr>
         <button type="submit">Get</button>
         <a href="delete.php">Delete all file</a>
-        <a href="/download">Downloaded</a>
+        <a href="download.php">Download</a>
     </form>
     <?php 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
