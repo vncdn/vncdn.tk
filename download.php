@@ -3,10 +3,7 @@ require_once('./helper.php');
 $files = glob(dirname(__FILE__). '/download/*'); // get all file names
 $filename = basename($files[0]);
 $file = $files[0];
-// dd($files[0]);
-// addition by Jorg Weske
 $file_extension = strtolower(substr(strrchr($filename,"."),1));
-// dd($file_extension);
 if( $file == "" ) 
 {
   echo "<html><title>Download</title><body>ERROR: download file NOT SPECIFIED. USE force-download.php?file=filepath</body></html>";
